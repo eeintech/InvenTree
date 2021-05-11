@@ -28,7 +28,7 @@
                 <th>{% trans "Select Supplier Part" %}</th>
                 <th>{% trans "Quantity" %}</th>
                 {% for col in columns %}
-                {% if col.name != 'Quantity' %}
+                {% if col.name != 'quantity' %}
                 <th>
                     <input type='hidden' name='col_name_{{ forloop.counter0 }}' value='{{ col.name }}'/>
                     <input type='hidden' name='col_guess_{{ forloop.counter0 }}' value='{{ col.guess }}'/>
